@@ -1,3 +1,4 @@
+aid: calorieninjas
 url: >-
   https://example.com/apis/calorieninjas-easy-free-nutrition-facts-and-recipe-api.yml
 apis:
@@ -8,16 +9,34 @@ apis:
     overlays: []
     description: Get nutrition and recipe data for 100,000  foods and beverages.
 name: CalorieNinjas
-aid: calorieninjas
 tags:
   - Bookmarks
+type: APIs.io Search
 image: >-
   https://kinlane-productions2.s3.amazonaws.com/apis-json-icons/calorieninjas-easy-free-nutrition-facts-and-recipe-api.png
 created: '2024-03-30T00:00:00.000Z'
 modified: '2024-11-10'
-type: APIs.io Search
 description: Get nutrition and recipe data for 100,000  foods and beverages.
 maintainers:
   - FN: API Evangelist
     email: info@apievangelist.com
 specificationVersion: '0.16'
+common:
+  - name: Sign In - CalorieNinjas
+    url: https://calorieninjas.com/signin
+    type: Login
+  - name: Register - CalorieNinjas
+    url: https://calorieninjas.com/register
+    type: SignUp
+  - name: Terms of Service - CalorieNinjas
+    url: https://calorieninjas.com/tos
+    type: TermsOfService
+  - name: Privacy Policy - CalorieNinjas
+    url: https://calorieninjas.com/privacy
+    type: PrivacyPolicy
+  - name: Pricing - CalorieNinjas
+    url: https://calorieninjas.com/pricing
+    type: Pricing
+  - name: CalorieNinjas - Easy, Free Nutrition Facts and Recipe API
+    url: https://calorieninjas.com/
+    type: Portal
