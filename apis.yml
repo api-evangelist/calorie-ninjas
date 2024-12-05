@@ -4,7 +4,6 @@ url: >-
 apis:
   - aid: calorieninjas:calorieninjas
     name: CalorieNinjas
-    description: Get nutrition and recipe data for 100,000  foods and beverages.
     tags:
       - Nutrition
       - Recipes
@@ -13,10 +12,11 @@ apis:
     image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     humanURL: https://calorieninjas.com/
     properties:
-      - type: Documentation
-        url: https://calorieninjas.com/
-      - type: OpenAPI
-        url: properties/calorieninjas-openapi.yml
+      - url: https://calorieninjas.com/
+        type: Documentation
+      - url: properties/calorieninjas-openapi.yml
+        type: OpenAPI
+    description: Get nutrition and recipe data for 100,000  foods and beverages.
 name: CalorieNinjas
 tags:
   - Nutrition
