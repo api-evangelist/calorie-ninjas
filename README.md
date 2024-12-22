@@ -25,6 +25,7 @@ Get nutrition and recipe data for 100,000  foods and beverages.
 Get nutrition and recipe data for 100,000  foods and beverages.
 
 **Human URL:** [https://calorieninjas.com/](https://calorieninjas.com/)
+r
 
 ## Common Properties
 
