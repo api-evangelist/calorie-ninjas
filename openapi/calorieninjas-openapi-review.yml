@@ -1,0 +1,1315 @@
+executed: '2024-12-05T00:39:37.979Z'
+results:
+  - code: openapi-external-docs-error
+    message: OpenAPI MUST Have External Documentation
+    path: []
+    severity: 0
+    range:
+      start:
+        line: 0
+        character: 0
+      end:
+        line: 133
+        character: 21
+  - code: openapi-tags-object-error
+    message: OpenAPIs MUST Have a Tag Object
+    path: []
+    severity: 0
+    range:
+      start:
+        line: 0
+        character: 0
+      end:
+        line: 133
+        character: 21
+  - code: openapi-info-contact-error
+    message: Info MUST Have Contact Object
+    path:
+      - info
+    severity: 0
+    range:
+      start:
+        line: 1
+        character: 5
+      end:
+        line: 4
+        character: 16
+  - code: openapi-info-license-error
+    message: Info MUST Have License
+    path:
+      - info
+    severity: 0
+    range:
+      start:
+        line: 1
+        character: 5
+      end:
+        line: 4
+        character: 16
+  - code: openapi-info-terms-of-service-error
+    message: Info MUST Have Terms of Service
+    path:
+      - info
+    severity: 0
+    range:
+      start:
+        line: 1
+        character: 5
+      end:
+        line: 4
+        character: 16
+  - code: openapi-info-title-info
+    message: Info Has Title
+    path:
+      - info
+      - title
+    severity: 2
+    range:
+      start:
+        line: 2
+        character: 9
+      end:
+        line: 2
+        character: 22
+  - code: openapi-info-title-upper-case-info
+    message: Info Title MUST Have First Characters Capitalized
+    path:
+      - info
+      - title
+    severity: 2
+    range:
+      start:
+        line: 2
+        character: 9
+      end:
+        line: 2
+        character: 22
+  - code: openapi-info-description-info
+    message: Info Has Description
+    path:
+      - info
+      - description
+    severity: 2
+    range:
+      start:
+        line: 3
+        character: 15
+      end:
+        line: 3
+        character: 78
+  - code: openapi-info-version-info
+    message: Info Has Version
+    path:
+      - info
+      - version
+    severity: 2
+    range:
+      start:
+        line: 4
+        character: 11
+      end:
+        line: 4
+        character: 16
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - /nutrition
+    severity: 0
+    range:
+      start:
+        line: 8
+        character: 13
+      end:
+        line: 67
+        character: 24
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - /nutrition
+    severity: 2
+    range:
+      start:
+        line: 8
+        character: 13
+      end:
+        line: 67
+        character: 24
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - /nutrition
+    severity: 2
+    range:
+      start:
+        line: 8
+        character: 13
+      end:
+        line: 67
+        character: 24
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - /nutrition
+      - get
+    severity: 2
+    range:
+      start:
+        line: 9
+        character: 8
+      end:
+        line: 67
+        character: 24
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - /nutrition
+      - get
+    severity: 0
+    range:
+      start:
+        line: 9
+        character: 8
+      end:
+        line: 67
+        character: 24
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - /nutrition
+      - get
+    severity: 0
+    range:
+      start:
+        line: 9
+        character: 8
+      end:
+        line: 67
+        character: 24
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - /nutrition
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 10
+        character: 15
+      end:
+        line: 10
+        character: 40
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - /nutrition
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 10
+        character: 15
+      end:
+        line: 10
+        character: 40
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - /nutrition
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 11
+        character: 19
+      end:
+        line: 13
+        character: 14
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - /nutrition
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 15
+        character: 10
+      end:
+        line: 24
+        character: 27
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 25
+        character: 16
+      end:
+        line: 65
+        character: 36
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 25
+        character: 16
+      end:
+        line: 65
+        character: 36
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 25
+        character: 16
+      end:
+        line: 65
+        character: 36
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 26
+        character: 14
+      end:
+        line: 61
+        character: 38
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 27
+        character: 23
+      end:
+        line: 27
+        character: 76
+  - code: openapi-response-get-200-content-info
+    message: GET 200 Response Has Content.
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '200'
+      - content
+    severity: 2
+    range:
+      start:
+        line: 28
+        character: 18
+      end:
+        line: 61
+        character: 38
+  - code: openapi-response-get-200-media-type-examples-error
+    message: GET 200 Response MUST Have Examples
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+    severity: 0
+    range:
+      start:
+        line: 29
+        character: 29
+      end:
+        line: 61
+        character: 38
+  - code: openapi-response-get-200-media-type-info
+    message: GET 200 Response Has Media Type.
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+    severity: 2
+    range:
+      start:
+        line: 29
+        character: 29
+      end:
+        line: 61
+        character: 38
+  - code: openapi-response-get-200-media-type-schema-info
+    message: GET 200 Response Has Schema
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+      - schema
+    severity: 2
+    range:
+      start:
+        line: 30
+        character: 21
+      end:
+        line: 61
+        character: 38
+  - code: openapi-response-get-200-media-type-schema-ref-info
+    message: GET 200 Responses Uses Schema Reference
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+      - schema
+    severity: 2
+    range:
+      start:
+        line: 30
+        character: 21
+      end:
+        line: 61
+        character: 38
+  - code: openapi-response-get-400-schema-ref-info
+    message: GET 400 Responses Uses Schema Reference
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '400'
+    severity: 2
+    range:
+      start:
+        line: 62
+        character: 14
+      end:
+        line: 63
+        character: 35
+  - code: openapi-response-get-400-status-code-info
+    message: GET Responses Has 400 Status Codes
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '400'
+    severity: 2
+    range:
+      start:
+        line: 62
+        character: 14
+      end:
+        line: 63
+        character: 35
+  - code: openapi-response-get-401-schema-ref-info
+    message: GET 401 Responses Has Schema Reference
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '401'
+    severity: 2
+    range:
+      start:
+        line: 64
+        character: 14
+      end:
+        line: 65
+        character: 36
+  - code: openapi-response-get-401-status-code-info
+    message: GET Responses MUST Have 401 Status Code
+    path:
+      - paths
+      - /nutrition
+      - get
+      - responses
+      - '401'
+    severity: 2
+    range:
+      start:
+        line: 64
+        character: 14
+      end:
+        line: 65
+        character: 36
+  - code: openapi-operation-security-definitions-info
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - /nutrition
+      - get
+      - security
+    severity: 2
+    range:
+      start:
+        line: 66
+        character: 15
+      end:
+        line: 67
+        character: 24
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - /imagetextnutrition
+    severity: 0
+    range:
+      start:
+        line: 68
+        character: 22
+      end:
+        line: 92
+        character: 24
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - /imagetextnutrition
+    severity: 2
+    range:
+      start:
+        line: 68
+        character: 22
+      end:
+        line: 92
+        character: 24
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - /imagetextnutrition
+    severity: 2
+    range:
+      start:
+        line: 68
+        character: 22
+      end:
+        line: 92
+        character: 24
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+    severity: 0
+    range:
+      start:
+        line: 69
+        character: 9
+      end:
+        line: 92
+        character: 24
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+    severity: 0
+    range:
+      start:
+        line: 69
+        character: 9
+      end:
+        line: 92
+        character: 24
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 70
+        character: 15
+      end:
+        line: 70
+        character: 54
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 70
+        character: 15
+      end:
+        line: 70
+        character: 54
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - description
+    severity: 2
+    range:
+      start:
+        line: 71
+        character: 19
+      end:
+        line: 73
+        character: 20
+  - code: openapi-request-body-on-post-info
+    message: POST Requests Has a Body
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - requestBody
+    severity: 2
+    range:
+      start:
+        line: 74
+        character: 18
+      end:
+        line: 83
+        character: 32
+  - code: openapi-request-body-content-on-post-info
+    message: Request Body Content POST
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - requestBody
+      - content
+    severity: 2
+    range:
+      start:
+        line: 76
+        character: 16
+      end:
+        line: 83
+        character: 32
+  - code: openapi-request-body-have-examples-error
+    message: Request Bodies MUST Have Examples
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - requestBody
+      - content
+      - multipart/form-data
+    severity: 0
+    range:
+      start:
+        line: 77
+        character: 30
+      end:
+        line: 83
+        character: 32
+  - code: openapi-request-body-have-schema-info
+    message: Request Body Schema
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - requestBody
+      - content
+      - multipart/form-data
+      - schema
+    severity: 2
+    range:
+      start:
+        line: 78
+        character: 19
+      end:
+        line: 83
+        character: 32
+  - code: openapi-request-body-have-schema-ref-info
+    message: Request Bodies Use Schema Reference
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - requestBody
+      - content
+      - multipart/form-data
+      - schema
+    severity: 2
+    range:
+      start:
+        line: 78
+        character: 19
+      end:
+        line: 83
+        character: 32
+  - code: openapi-response-post-201-status-code-error
+    message: POST Responses MUST Have 201 Status Codes
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 84
+        character: 16
+      end:
+        line: 90
+        character: 36
+  - code: openapi-response-post-403-status-code-error
+    message: POST Responses Has 403 Status Codes
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 84
+        character: 16
+      end:
+        line: 90
+        character: 36
+  - code: openapi-response-post-404-status-code-error
+    message: POST Responses Has 404 Status Codes
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 84
+        character: 16
+      end:
+        line: 90
+        character: 36
+  - code: openapi-response-post-429-status-code-error
+    message: POST Responses MUST Have 429 Status Codes
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 84
+        character: 16
+      end:
+        line: 90
+        character: 36
+  - code: openapi-response-post-500-status-code-error
+    message: POST Responses MUST Have 500 Status Codes
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 84
+        character: 16
+      end:
+        line: 90
+        character: 36
+  - code: openapi-response-post-400-schema-ref-info
+    message: POST 400 Responses Uses Schema Reference
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+      - '400'
+    severity: 2
+    range:
+      start:
+        line: 87
+        character: 14
+      end:
+        line: 88
+        character: 35
+  - code: openapi-response-post-400-status-code-info
+    message: POST Responses MUST Have 400 Status Codes
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+      - '400'
+    severity: 2
+    range:
+      start:
+        line: 87
+        character: 14
+      end:
+        line: 88
+        character: 35
+  - code: openapi-response-post-401-schema-ref-info
+    message: POST 401 Responses Uses Schema Reference
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+      - '401'
+    severity: 2
+    range:
+      start:
+        line: 89
+        character: 14
+      end:
+        line: 90
+        character: 36
+  - code: openapi-response-post-401-status-code-info
+    message: POST Responses MUST Have 401 Status Codes
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - responses
+      - '401'
+    severity: 2
+    range:
+      start:
+        line: 89
+        character: 14
+      end:
+        line: 90
+        character: 36
+  - code: openapi-operation-security-definitions-info
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - /imagetextnutrition
+      - post
+      - security
+    severity: 2
+    range:
+      start:
+        line: 91
+        character: 15
+      end:
+        line: 92
+        character: 24
+  - code: openapi-no-api-in-path-error
+    message: No API in Path
+    path:
+      - paths
+      - /recipe
+    severity: 0
+    range:
+      start:
+        line: 93
+        character: 10
+      end:
+        line: 127
+        character: 24
+  - code: openapi-no-path-trailing-slash-info
+    message: Path Trailing Slash
+    path:
+      - paths
+      - /recipe
+    severity: 2
+    range:
+      start:
+        line: 93
+        character: 10
+      end:
+        line: 127
+        character: 24
+  - code: openapi-version-in-path-info
+    message: Version in Path
+    path:
+      - paths
+      - /recipe
+    severity: 2
+    range:
+      start:
+        line: 93
+        character: 10
+      end:
+        line: 127
+        character: 24
+  - code: openapi-no-request-body-on-get-info
+    message: GET Request Body
+    path:
+      - paths
+      - /recipe
+      - get
+    severity: 2
+    range:
+      start:
+        line: 94
+        character: 8
+      end:
+        line: 127
+        character: 24
+  - code: openapi-operations-operation-ids-error
+    message: Operation MUST Have Identifier
+    path:
+      - paths
+      - /recipe
+      - get
+    severity: 0
+    range:
+      start:
+        line: 94
+        character: 8
+      end:
+        line: 127
+        character: 24
+  - code: openapi-operations-tags-error
+    message: Operations MUST Have Tags
+    path:
+      - paths
+      - /recipe
+      - get
+    severity: 0
+    range:
+      start:
+        line: 94
+        character: 8
+      end:
+        line: 127
+        character: 24
+  - code: openapi-operations-summary-info
+    message: Operation Has a Summary
+    path:
+      - paths
+      - /recipe
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 95
+        character: 15
+      end:
+        line: 95
+        character: 26
+  - code: openapi-operations-summary-period-none-info
+    message: Operation Has a Period.
+    path:
+      - paths
+      - /recipe
+      - get
+      - summary
+    severity: 2
+    range:
+      start:
+        line: 95
+        character: 15
+      end:
+        line: 95
+        character: 26
+  - code: openapi-operations-description-info
+    message: Operation Has Description
+    path:
+      - paths
+      - /recipe
+      - get
+      - description
+    severity: 2
+    range:
+      start:
+        line: 96
+        character: 19
+      end:
+        line: 96
+        character: 72
+  - code: openapi-parameters-componentized-error
+    message: Parameters MUST use components $ref.
+    path:
+      - paths
+      - /recipe
+      - get
+      - parameters
+      - '0'
+    severity: 0
+    range:
+      start:
+        line: 98
+        character: 10
+      end:
+        line: 103
+        character: 24
+  - code: openapi-response-get-403-status-code-error
+    message: GET Responses Has 403 Status Code
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 104
+        character: 16
+      end:
+        line: 125
+        character: 36
+  - code: openapi-response-get-429-status-code-error
+    message: GET Responses Has 429 Status Code
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 104
+        character: 16
+      end:
+        line: 125
+        character: 36
+  - code: openapi-response-get-500-status-code-error
+    message: GET Responses MUST Have 500 Status Code
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+    severity: 0
+    range:
+      start:
+        line: 104
+        character: 16
+      end:
+        line: 125
+        character: 36
+  - code: openapi-response-get-200-status-code-info
+    message: GET Responses Has 200 Status Codes
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '200'
+    severity: 2
+    range:
+      start:
+        line: 105
+        character: 14
+      end:
+        line: 121
+        character: 34
+  - code: openapi-response-get-200-description-info
+    message: GET 200 Response has description.
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '200'
+      - description
+    severity: 2
+    range:
+      start:
+        line: 106
+        character: 23
+      end:
+        line: 106
+        character: 73
+  - code: openapi-response-get-200-content-info
+    message: GET 200 Response Has Content.
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '200'
+      - content
+    severity: 2
+    range:
+      start:
+        line: 107
+        character: 18
+      end:
+        line: 121
+        character: 34
+  - code: openapi-response-get-200-media-type-examples-error
+    message: GET 200 Response MUST Have Examples
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+    severity: 0
+    range:
+      start:
+        line: 108
+        character: 29
+      end:
+        line: 121
+        character: 34
+  - code: openapi-response-get-200-media-type-info
+    message: GET 200 Response Has Media Type.
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+    severity: 2
+    range:
+      start:
+        line: 108
+        character: 29
+      end:
+        line: 121
+        character: 34
+  - code: openapi-response-get-200-media-type-schema-info
+    message: GET 200 Response Has Schema
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+      - schema
+    severity: 2
+    range:
+      start:
+        line: 109
+        character: 21
+      end:
+        line: 121
+        character: 34
+  - code: openapi-response-get-200-media-type-schema-ref-info
+    message: GET 200 Responses Uses Schema Reference
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '200'
+      - content
+      - application/json
+      - schema
+    severity: 2
+    range:
+      start:
+        line: 109
+        character: 21
+      end:
+        line: 121
+        character: 34
+  - code: openapi-response-get-400-schema-ref-info
+    message: GET 400 Responses Uses Schema Reference
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '400'
+    severity: 2
+    range:
+      start:
+        line: 122
+        character: 14
+      end:
+        line: 123
+        character: 35
+  - code: openapi-response-get-400-status-code-info
+    message: GET Responses Has 400 Status Codes
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '400'
+    severity: 2
+    range:
+      start:
+        line: 122
+        character: 14
+      end:
+        line: 123
+        character: 35
+  - code: openapi-response-get-401-schema-ref-info
+    message: GET 401 Responses Has Schema Reference
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '401'
+    severity: 2
+    range:
+      start:
+        line: 124
+        character: 14
+      end:
+        line: 125
+        character: 36
+  - code: openapi-response-get-401-status-code-info
+    message: GET Responses MUST Have 401 Status Code
+    path:
+      - paths
+      - /recipe
+      - get
+      - responses
+      - '401'
+    severity: 2
+    range:
+      start:
+        line: 124
+        character: 14
+      end:
+        line: 125
+        character: 36
+  - code: openapi-operation-security-definitions-info
+    message: Operations MUST Have a Security Definition
+    path:
+      - paths
+      - /recipe
+      - get
+      - security
+    severity: 2
+    range:
+      start:
+        line: 126
+        character: 15
+      end:
+        line: 127
+        character: 24
+  - code: openapi-components-examples-error
+    message: Components MUST Have a Examples Property
+    path:
+      - components
+    severity: 0
+    range:
+      start:
+        line: 128
+        character: 11
+      end:
+        line: 133
+        character: 21
+  - code: openapi-components-headers-error
+    message: Components MUST Have a Headers Property
+    path:
+      - components
+    severity: 0
+    range:
+      start:
+        line: 128
+        character: 11
+      end:
+        line: 133
+        character: 21
+  - code: openapi-components-parameters-error
+    message: Components MUST Have a Parameters Property
+    path:
+      - components
+    severity: 0
+    range:
+      start:
+        line: 128
+        character: 11
+      end:
+        line: 133
+        character: 21
+  - code: openapi-components-responses-error
+    message: Components MUST have a responses property.
+    path:
+      - components
+    severity: 0
+    range:
+      start:
+        line: 128
+        character: 11
+      end:
+        line: 133
+        character: 21
+  - code: openapi-components-schemas-error
+    message: Components MUST Have a Schema Property
+    path:
+      - components
+    severity: 0
+    range:
+      start:
+        line: 128
+        character: 11
+      end:
+        line: 133
+        character: 21
+  - code: openapi-security-schemes-info
+    message: Components Have a Security Schemes
+    path:
+      - components
+      - securitySchemes
+    severity: 2
+    range:
+      start:
+        line: 129
+        character: 18
+      end:
+        line: 133
+        character: 21
