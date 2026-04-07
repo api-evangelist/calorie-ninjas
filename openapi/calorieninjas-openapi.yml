@@ -66,6 +66,8 @@ paths:
           description: Unauthorized.
       security:
         - ApiKeyAuth: []
+      tags:
+        - Nutrition
   /imagetextnutrition:
     post:
       summary: CalorieNinjas Get nutrition information from an image
@@ -91,6 +93,8 @@ paths:
           description: Unauthorized.
       security:
         - ApiKeyAuth: []
+      tags:
+        - Imagetextnutrition
   /recipe:
     get:
       summary: CalorieNinjas Get recipes
@@ -126,9 +130,15 @@ paths:
           description: Unauthorized.
       security:
         - ApiKeyAuth: []
+      tags:
+        - Recipe
 components:
   securitySchemes:
     ApiKeyAuth:
       type: apiKey
       in: header
       name: X-Api-Key
+tags:
+  - name: Imagetextnutrition
+  - name: Nutrition
+  - name: Recipe

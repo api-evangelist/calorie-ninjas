@@ -3,10 +3,10 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/calorie-ninjas/refs/heads/main/apis.yml
 name: CalorieNinjas
 tags:
+  - Beverages
+  - Foods
   - Nutrition
   - Recipes
-  - Foods
-  - Beverages
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -20,10 +20,10 @@ apis:
   - aid: calorie-ninjas:calorieninjas
     name: CalorieNinjas API
     tags:
+      - Beverages
+      - Foods
       - Nutrition
       - Recipes
-      - Foods
-      - Beverages
     humanURL: https://calorieninjas.com/
     properties:
       - url: https://calorieninjas.com/
