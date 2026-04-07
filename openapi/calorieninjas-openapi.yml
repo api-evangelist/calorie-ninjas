@@ -8,7 +8,7 @@ servers:
 paths:
   /nutrition:
     get:
-      summary: Get nutrition information
+      summary: CalorieNinjas Get nutrition information
       description: >-
         Retrieve a detailed list of nutrition information for items based on a
         query.
@@ -68,7 +68,7 @@ paths:
         - ApiKeyAuth: []
   /imagetextnutrition:
     post:
-      summary: Get nutrition information from an image
+      summary: CalorieNinjas Get nutrition information from an image
       description: >-
         Analyze an image containing food/beverage text to get nutrition
         information.
@@ -93,7 +93,7 @@ paths:
         - ApiKeyAuth: []
   /recipe:
     get:
-      summary: Get recipes
+      summary: CalorieNinjas Get recipes
       description: Retrieve a list of recipes matching the search query.
       parameters:
         - name: query
