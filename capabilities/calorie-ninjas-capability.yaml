@@ -1,0 +1,159 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: CalorieNinjas
+  description: Get nutrition and recipe data for 100,000 foods and beverages.
+  tags:
+  - Calorie
+  - Ninjas
+  - API
+  created: '2026-05-06'
+  modified: '2026-05-06'
+capability:
+  consumes:
+  - type: http
+    namespace: calorie-ninjas
+    baseUri: https://api.calorieninjas.com/v1
+    description: CalorieNinjas HTTP API.
+    authentication:
+      type: apikey
+      in: header
+      name: X-Api-Key
+      value: '{{CALORIE_NINJAS_TOKEN}}'
+    resources:
+    - name: nutrition
+      path: /nutrition
+      operations:
+      - name: get-nutrition
+        method: GET
+        description: CalorieNinjas Get nutrition information
+        inputParameters:
+        - name: query
+          in: query
+          type: string
+          required: true
+          description: A string containing food or drink items. Prefix a quantity before an item to calculate for that quantity.
+            Default is 100 grams if unspecified.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: imagetextnutrition
+      path: /imagetextnutrition
+      operations:
+      - name: post-imagetextnutrition
+        method: POST
+        description: CalorieNinjas Get nutrition information from an image
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: recipe
+      path: /recipe
+      operations:
+      - name: get-recipe
+        method: GET
+        description: CalorieNinjas Get recipes
+        inputParameters:
+        - name: query
+          in: query
+          type: string
+          required: true
+          description: A string containing a dish name. Partial match is supported.
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: calorie-ninjas-rest
+    description: REST adapter for CalorieNinjas.
+    resources:
+    - path: /nutrition
+      name: get-nutrition
+      operations:
+      - method: GET
+        name: get-nutrition
+        description: CalorieNinjas Get nutrition information
+        call: calorie-ninjas.get-nutrition
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /imagetextnutrition
+      name: post-imagetextnutrition
+      operations:
+      - method: POST
+        name: post-imagetextnutrition
+        description: CalorieNinjas Get nutrition information from an image
+        call: calorie-ninjas.post-imagetextnutrition
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /recipe
+      name: get-recipe
+      operations:
+      - method: GET
+        name: get-recipe
+        description: CalorieNinjas Get recipes
+        call: calorie-ninjas.get-recipe
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: calorie-ninjas-mcp
+    transport: http
+    description: MCP adapter for CalorieNinjas for AI agent use.
+    tools:
+    - name: get-nutrition
+      description: CalorieNinjas Get nutrition information
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: calorie-ninjas.get-nutrition
+      with:
+        query: tools.query
+      inputParameters:
+      - name: query
+        type: string
+        description: A string containing food or drink items. Prefix a quantity before an item to calculate for that quantity.
+          Default is 100 grams if unspecified.
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: post-imagetextnutrition
+      description: CalorieNinjas Get nutrition information from an image
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: calorie-ninjas.post-imagetextnutrition
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-recipe
+      description: CalorieNinjas Get recipes
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: calorie-ninjas.get-recipe
+      with:
+        query: tools.query
+      inputParameters:
+      - name: query
+        type: string
+        description: A string containing a dish name. Partial match is supported.
+        required: true
+      outputParameters:
+      - type: object
+        mapping: $.
+binds:
+- namespace: env
+  keys:
+    CALORIE_NINJAS_TOKEN: CALORIE_NINJAS_TOKEN
