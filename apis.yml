@@ -55,11 +55,11 @@ common:
     url: https://calorieninjas.com/api
   - type: Login
     url: https://calorieninjas.com/signin
-  - type: Sign Up
+  - type: SignUp
     url: https://calorieninjas.com/register
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://calorieninjas.com/tos
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://calorieninjas.com/privacy
   - type: Pricing
     url: https://calorieninjas.com/pricing
