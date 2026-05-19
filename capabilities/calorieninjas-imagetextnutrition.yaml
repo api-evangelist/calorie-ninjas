@@ -1,0 +1,82 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: CalorieNinjas — Imagetextnutrition
+  description: 'CalorieNinjas — Imagetextnutrition. 1 operations. Lead operation: CalorieNinjas Get nutrition information
+    from an image. Self-contained Naftiko capability covering one Calorie Ninjas business surface.'
+  tags:
+  - Calorie Ninjas
+  - Imagetextnutrition
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    CALORIE_NINJAS_API_KEY: CALORIE_NINJAS_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: calorieninjas-imagetextnutrition
+    baseUri: https://api.calorieninjas.com/v1
+    description: CalorieNinjas — Imagetextnutrition business capability. Self-contained, no shared references.
+    resources:
+    - name: imagetextnutrition
+      path: /imagetextnutrition
+      operations:
+      - name: post
+        method: POST
+        description: CalorieNinjas Get nutrition information from an image
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+    authentication:
+      type: apikey
+      key: X-Api-Key
+      value: '{{env.CALORIE_NINJAS_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: calorieninjas-imagetextnutrition-rest
+    port: 8080
+    description: REST adapter for CalorieNinjas — Imagetextnutrition. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/imagetextnutrition
+      name: imagetextnutrition
+      description: REST surface for imagetextnutrition.
+      operations:
+      - method: POST
+        name: post
+        description: CalorieNinjas Get nutrition information from an image
+        call: calorieninjas-imagetextnutrition.post
+        with:
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: calorieninjas-imagetextnutrition-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for CalorieNinjas — Imagetextnutrition. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: calorieninjas-get-nutrition-information-image
+      description: CalorieNinjas Get nutrition information from an image
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: calorieninjas-imagetextnutrition.post
+      with:
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
