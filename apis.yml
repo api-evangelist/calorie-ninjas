@@ -62,6 +62,8 @@ common:
   url: https://calorieninjas.com/privacy
 - type: Pricing
   url: https://calorieninjas.com/pricing
+- type: LLMsTxt
+  url: https://calorieninjas.com/llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
