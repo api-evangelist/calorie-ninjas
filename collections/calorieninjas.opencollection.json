@@ -1,0 +1,111 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "CalorieNinjas",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Nutrition",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "CalorieNinjas Get nutrition information",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.calorieninjas.com/v1/nutrition",
+            "params": [
+              {
+                "name": "query",
+                "value": "",
+                "type": "query",
+                "description": "A string containing food or drink items. Prefix a quantity before an item to calculate for that quantity. Default is 100 grams if unspecified."
+              }
+            ],
+            "auth": {
+              "type": "apikey",
+              "key": "X-Api-Key",
+              "value": "{{X-Api-Key}}",
+              "placement": "header"
+            }
+          },
+          "docs": "Retrieve a detailed list of nutrition information for items based on a query."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Imagetextnutrition",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "CalorieNinjas Get nutrition information from an image",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.calorieninjas.com/v1/imagetextnutrition",
+            "body": {
+              "type": "multipart-form",
+              "data": [
+                {
+                  "name": "media",
+                  "type": "text",
+                  "value": ""
+                }
+              ]
+            },
+            "auth": {
+              "type": "apikey",
+              "key": "X-Api-Key",
+              "value": "{{X-Api-Key}}",
+              "placement": "header"
+            }
+          },
+          "docs": "Analyze an image containing food/beverage text to get nutrition information."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Recipe",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "CalorieNinjas Get recipes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.calorieninjas.com/v1/recipe",
+            "params": [
+              {
+                "name": "query",
+                "value": "",
+                "type": "query",
+                "description": "A string containing a dish name. Partial match is supported."
+              }
+            ],
+            "auth": {
+              "type": "apikey",
+              "key": "X-Api-Key",
+              "value": "{{X-Api-Key}}",
+              "placement": "header"
+            }
+          },
+          "docs": "Retrieve a list of recipes matching the search query."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
