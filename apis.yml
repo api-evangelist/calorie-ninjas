@@ -8,7 +8,7 @@ tags:
   - Nutrition
   - Recipes
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-03-30'
 modified: '2026-05-19'
@@ -29,7 +29,7 @@ apis:
       - Recipes
     baseURL: https://api.calorieninjas.com/v1
     humanURL: https://calorieninjas.com/api
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     properties:
       - url: https://calorieninjas.com/api
         type: Documentation
