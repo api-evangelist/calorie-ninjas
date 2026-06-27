@@ -50,7 +50,7 @@ common:
     url: https://calorieninjas.com/api
   - type: Login
     url: https://calorieninjas.com/signin
-  - type: SignUp
+  - type: Signup
     url: https://calorieninjas.com/register
   - type: TermsOfService
     url: https://calorieninjas.com/tos
@@ -58,7 +58,7 @@ common:
     url: https://calorieninjas.com/privacy
   - type: Pricing
     url: https://calorieninjas.com/pricing
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://calorieninjas.com/llms.txt
 maintainers:
   - FN: Kin Lane
