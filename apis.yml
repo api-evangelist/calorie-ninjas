@@ -44,6 +44,10 @@ apis:
       /recipe for searching recipes with titles, ingredients, servings, and instructions. All requests authenticate with
       an API key sent in the X-Api-Key header.
 common:
+  - type: DomainSecurity
+    url: security/calorie-ninjas-domain-security.yml
+  - type: Authentication
+    url: authentication/calorie-ninjas-authentication.yml
   - type: Portal
     url: https://calorieninjas.com/
   - type: Documentation
