@@ -44,6 +44,8 @@ apis:
       /recipe for searching recipes with titles, ingredients, servings, and instructions. All requests authenticate with
       an API key sent in the X-Api-Key header.
 common:
+  - type: AgenticAccess
+    url: agentic-access/calorie-ninjas-agentic-access.yml
   - type: DomainSecurity
     url: security/calorie-ninjas-domain-security.yml
   - type: Authentication
