@@ -1,0 +1,41 @@
+openapi: 3.1.0
+info:
+  title: CalorieNinjas Imagetextnutrition API
+  description: Get nutrition and recipe data for 100,000  foods and beverages.
+  version: 1.0.0
+servers:
+- url: https://api.calorieninjas.com/v1
+tags:
+- name: Imagetextnutrition
+paths:
+  /imagetextnutrition:
+    post:
+      summary: CalorieNinjas Get nutrition information from an image
+      description: Analyze an image containing food/beverage text to get nutrition information.
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                media:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Successful response containing nutrition information.
+        '400':
+          description: Bad request.
+        '401':
+          description: Unauthorized.
+      security:
+      - ApiKeyAuth: []
+      tags:
+      - Imagetextnutrition
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-Api-Key
