@@ -8,7 +8,20 @@ tags:
   - Nutrition
   - Recipes
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/calorie-ninjas.png
 access: 3rd-Party
 created: '2024-03-30'
 modified: '2026-05-19'
@@ -19,30 +32,48 @@ description: >-
   food-related text (menus, recipes, food journals), and search recipes matching search queries. All endpoints use a
   simple API key authentication model via the X-Api-Key header.
 apis:
-  - aid: calorie-ninjas:calorieninjas
-    name: CalorieNinjas API
-    tags:
-      - Beverages
-      - Foods
-      - Image Recognition
-      - Nutrition
-      - Recipes
-    baseURL: https://api.calorieninjas.com/v1
-    humanURL: https://calorieninjas.com/api
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    properties:
-      - url: https://calorieninjas.com/api
-        type: Documentation
-      - url: openapi/calorieninjas-openapi.yml
-        type: OpenAPI
-      - url: openapi/calorieninjas-openapi-review.yml
-        type: Review
-    description: >-
-      The CalorieNinjas API returns nutrition and recipe data for 100,000+ foods and beverages. It offers three
-      endpoints: GET /nutrition for natural-language nutrition lookups (returns calories, macros, vitamins, and
-      minerals), POST /imagetextnutrition for extracting nutrition from images containing food/beverage text, and GET
-      /recipe for searching recipes with titles, ingredients, servings, and instructions. All requests authenticate with
-      an API key sent in the X-Api-Key header.
+- aid: calorie-ninjas:calorie-ninjas-imagetextnutrition-api
+  name: CalorieNinjas Imagetextnutrition API
+  description: The Imagetextnutrition API from CalorieNinjas — 1 operation(s) for imagetextnutrition.
+  humanURL: https://calorieninjas.com/api
+  baseURL: https://api.calorieninjas.com/v1
+  tags:
+  - Imagetextnutrition
+  properties:
+  - type: OpenAPI
+    url: openapi/calorie-ninjas-imagetextnutrition-api-openapi.yml
+  - type: Documentation
+    url: https://calorieninjas.com/api
+  - type: Review
+    url: openapi/calorieninjas-openapi-review.yml
+- aid: calorie-ninjas:calorie-ninjas-nutrition-api
+  name: CalorieNinjas Nutrition API
+  description: The Nutrition API from CalorieNinjas — 1 operation(s) for nutrition.
+  humanURL: https://calorieninjas.com/api
+  baseURL: https://api.calorieninjas.com/v1
+  tags:
+  - Nutrition
+  properties:
+  - type: OpenAPI
+    url: openapi/calorie-ninjas-nutrition-api-openapi.yml
+  - type: Documentation
+    url: https://calorieninjas.com/api
+  - type: Review
+    url: openapi/calorieninjas-openapi-review.yml
+- aid: calorie-ninjas:calorie-ninjas-recipe-api
+  name: CalorieNinjas Recipe API
+  description: The Recipe API from CalorieNinjas — 1 operation(s) for recipe.
+  humanURL: https://calorieninjas.com/api
+  baseURL: https://api.calorieninjas.com/v1
+  tags:
+  - Recipe
+  properties:
+  - type: OpenAPI
+    url: openapi/calorie-ninjas-recipe-api-openapi.yml
+  - type: Documentation
+    url: https://calorieninjas.com/api
+  - type: Review
+    url: openapi/calorieninjas-openapi-review.yml
 common:
   - type: AgenticAccess
     url: agentic-access/calorie-ninjas-agentic-access.yml
