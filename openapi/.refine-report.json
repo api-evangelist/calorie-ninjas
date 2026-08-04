@@ -1,0 +1,18 @@
+{
+  "provider": "calorie-ninjas",
+  "sources": [
+    "calorie-ninjas-imagetextnutrition-api-openapi.yml",
+    "calorie-ninjas-nutrition-api-openapi.yml",
+    "calorie-ninjas-recipe-api-openapi.yml"
+  ],
+  "outputs": [
+    "calorie-ninjas-imagetextnutrition-api-openapi.yml",
+    "calorie-ninjas-nutrition-api-openapi.yml",
+    "calorie-ninjas-recipe-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
