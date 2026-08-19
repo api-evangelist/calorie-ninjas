@@ -1,0 +1,226 @@
+{
+  "item": [
+    {
+      "id": "1452d81e-8d2f-459e-8b54-72ddab0c54a2",
+      "name": "Nutrition",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "ecae863e-173a-4ad6-82d4-193067a22c91",
+          "name": "CalorieNinjas Get nutrition information",
+          "request": {
+            "name": "CalorieNinjas Get nutrition information",
+            "description": {
+              "content": "Retrieve a detailed list of nutrition information for items based on a query.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "nutrition"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "query",
+                  "value": "<string>",
+                  "description": "(Required) A string containing food or drink items. Prefix a quantity before an item to calculate for that quantity. Default is 100 grams if unspecified."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "key",
+                  "value": "X-Api-Key"
+                },
+                {
+                  "key": "value",
+                  "value": "{{apiKey}}"
+                },
+                {
+                  "key": "in",
+                  "value": "header"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "311ac711-c1cf-46df-bc28-e41967daf425",
+              "name": "Successful response containing nutrition information.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "nutrition"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Api-Key",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"sugar_g\": 8904.138183483752,\n      \"fiber_g\": 5435.5492604059045,\n      \"serving_size_g\": 1417.0623464444732,\n      \"sodium_mg\": 946.9187365798149,\n      \"name\": \"string\",\n      \"potassium_mg\": 795.0436713553299,\n      \"fat_saturated_g\": 8432.48544205199,\n      \"fat_total_g\": 6030.495119524008,\n      \"calories\": 1358.347280811869,\n      \"cholesterol_mg\": 350.2164108091588,\n      \"protein_g\": 246.63345628175293,\n      \"carbohydrates_total_g\": 1062.6386881062788\n    },\n    {\n      \"sugar_g\": 9616.201356272002,\n      \"fiber_g\": 469.88901168553366,\n      \"serving_size_g\": 9287.569008310616,\n      \"sodium_mg\": 6572.558182197787,\n      \"name\": \"string\",\n      \"potassium_mg\": 7013.225198570409,\n      \"fat_saturated_g\": 9696.773674111291,\n      \"fat_total_g\": 5025.199450072627,\n      \"calories\": 7191.790331765544,\n      \"cholesterol_mg\": 9045.328382013762,\n      \"protein_g\": 5904.379197961942,\n      \"carbohydrates_total_g\": 3306.678820809664\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a444023e-2e2c-449b-8d61-a9a9d8860953",
+              "name": "Bad request.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "nutrition"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Api-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "eb143c7d-ca4d-41b4-a158-ebaced1b2417",
+              "name": "Unauthorized.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "nutrition"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Api-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.calorieninjas.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "6d9d8cbf-0156-4152-af26-29aed4f3b188",
+    "name": "CalorieNinjas Imagetextnutrition Nutrition API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Get nutrition and recipe data for 100,000  foods and beverages.",
+      "type": "text/plain"
+    }
+  }
+}
