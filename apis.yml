@@ -88,6 +88,8 @@ apis:
   - type: Review
     url: openapi/calorieninjas-openapi-review.yml
 common:
+  - type: Website
+    url: https://www.calorieninjas.com/
   - type: AgenticAccess
     url: agentic-access/calorie-ninjas-agentic-access.yml
   - type: DomainSecurity
