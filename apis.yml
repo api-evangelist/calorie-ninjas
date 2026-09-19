@@ -3,6 +3,12 @@ url: https://raw.githubusercontent.com/api-evangelist/calorie-ninjas/refs/heads/
 name: CalorieNinjas
 tags:
   - Beverages
+  - Food
+  - Image Recognition
+  - Nutrition
+  - Recipes
+tags_raw:
+  - Beverages
   - Foods
   - Image Recognition
   - Nutrition
