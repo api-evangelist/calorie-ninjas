@@ -1,7 +1,7 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: CalorieNinjas Imagetextnutrition Recipe API
-  description: Get nutrition and recipe data for 100,000  foods and beverages.
+  title: CalorieNinjas Recipe API
+  description: Get nutrition and recipe data for 100,000 foods and beverages.
   version: 1.0.0
 servers:
 - url: https://api.calorieninjas.com/v1
@@ -45,6 +45,8 @@ paths:
       - ApiKeyAuth: []
       tags:
       - Recipe
+      operationId: getRecipe
+      x-operation-id-source: derived
 components:
   securitySchemes:
     ApiKeyAuth:
