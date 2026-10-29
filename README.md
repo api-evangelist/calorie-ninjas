@@ -1,4 +1,4 @@
-# CalorieNinjas (calorie-ninjas)
+# CalorieNinjas
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,64 +66,122 @@
 
 CalorieNinjas provides an easy, free Nutrition Facts and Recipe API. Developers can retrieve nutrition information for over 100,000 foods and beverages using natural language queries, extract nutrition information from images of food-related text (menus, recipes, food journals), and search recipes matching search queries. All endpoints use a simple API key authentication model via the X-Api-Key header.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/calorie-ninjas/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/calorie-ninjas/refs/heads/main/apis.yml)
+**Areas:** Beverages · Food · Image Recognition · Nutrition · Recipes
 
-## Scope
+## CalorieNinjas on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for CalorieNinjas is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/calorie-ninjas/](https://apis.io/providers/calorie-ninjas/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (3)
 
-- Beverages
-- Foods
-- Image Recognition
-- Nutrition
-- Recipes
+- [CalorieNinjas Imagetextnutrition API](https://apis.io/apis/calorie-ninjas/calorie-ninjas-imagetextnutrition-api/) — The Imagetextnutrition API from CalorieNinjas — 1 operation(s) for imagetextnutrition.
+- [CalorieNinjas Nutrition API](https://apis.io/apis/calorie-ninjas/calorie-ninjas-nutrition-api/) — The Nutrition API from CalorieNinjas — 1 operation(s) for nutrition.
+- [CalorieNinjas Recipe API](https://apis.io/apis/calorie-ninjas/calorie-ninjas-recipe-api/) — The Recipe API from CalorieNinjas — 1 operation(s) for recipe.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-03-30
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### CalorieNinjas API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The CalorieNinjas API returns nutrition and recipe data for 100,000+ foods and beverages. It offers three endpoints: GET /nutrition for natural-language nutrition lookups (returns calories, macros, vitamins, and minerals), POST /imagetextnutrition for extracting nutrition from images containing food/beverage text, and GET /recipe for searching recipes with titles, ingredients, servings, and instructions. All requests authenticate with an API key sent in the X-Api-Key header.
+- [Calorie Ninjas Agentic Access](https://apis.io/agentic-access/calorie-ninjas/calorie-ninjas-agentic-access/)
 
-- **Human URL:** [https://calorieninjas.com/api](https://calorieninjas.com/api)
-- **Base URL:** `https://api.calorieninjas.com/v1`
+#### Collections (4)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Beverages
-- Foods
-- Image Recognition
-- Nutrition
-- Recipes
+- [CalorieNinjas Imagetextnutrition API](https://apis.io/collections/calorie-ninjas/open-calorie-ninjas-imagetextnutrition-api/)
+- [CalorieNinjas Imagetextnutrition Nutrition API](https://apis.io/collections/calorie-ninjas/open-calorie-ninjas-nutrition-api/)
+- [CalorieNinjas Imagetextnutrition Recipe API](https://apis.io/collections/calorie-ninjas/open-calorie-ninjas-recipe-api/)
+- [CalorieNinjas](https://apis.io/collections/calorie-ninjas/open-calorieninjas/)
 
-#### Properties
+#### Security (2)
 
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Calorie Ninjas Authentication](https://apis.io/security/calorie-ninjas/calorie-ninjas-authentication/)
+- [Calorie Ninjas Domain Security](https://apis.io/security/calorie-ninjas/calorie-ninjas-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Calorie Ninjas Plans Pricing](https://apis.io/plans/calorie-ninjas/calorie-ninjas-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Calorie Ninjas Rate Limits](https://apis.io/rate-limits/calorie-ninjas/calorie-ninjas-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Calorie Ninjas Finops](https://apis.io/finops/calorie-ninjas/calorie-ninjas-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.calorieninjas.com/)
 - [Documentation](https://calorieninjas.com/api)
-- [OpenAPI](openapi/calorieninjas-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/calorieninjas.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/calorieninjas.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Review](openapi/calorieninjas-openapi-review.yml)
-
-## Common Properties
-
-- [Portal](https://calorieninjas.com/)
-- [Documentation](https://calorieninjas.com/api)
-- [Login](https://calorieninjas.com/signin)
-- [Sign Up](https://calorieninjas.com/register)
-- [Terms of Service](https://calorieninjas.com/tos)
-- [Privacy Policy](https://calorieninjas.com/privacy)
 - [Pricing](https://calorieninjas.com/pricing)
-- [L L Ms Txt](https://calorieninjas.com/llms.txt)
+- [Blog](https://www.calorieninjas.com/blog/)
+- [Terms of service](https://calorieninjas.com/tos)
+- [Privacy policy](https://calorieninjas.com/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 36.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 49.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 46.1 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/calorie-ninjas/](https://apis.io/providers/calorie-ninjas/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CalorieNinjas: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/calorie-ninjas/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
